@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Mood Entry</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="addEntry()">
+    <ion-item>
+      <ion-label>Mood</ion-label>
+      <ion-select [(ngModel)]="mood" name="mood">
+        <ion-select-option value="happy">Happy</ion-select-option>
+        <ion-select-option value="sad">Sad</ion-select-option>
+        <ion-select-option value="angry">Angry</ion-select-option>
+        <ion-select-option value="neutral">Neutral</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Note</ion-label>
+      <ion-input [(ngModel)]="note" name="note"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Add Entry</ion-button>
+  </form>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "monitoramento de humor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
